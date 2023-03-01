@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="app-container">
+            <div class="out">
+
+                <div class="card card_weather">
+                    <div class="card__top">
+                        <p class="city-name"></p>
+                    </div>
+                    <div class="card__body card__body_forecast">
+                        <p class="temperature"></p>
+                        <img class="forecast-icon" alt="forecast">
+                    </div>
+                    <div class="card__bottom">
+                        <p class="info info-weather"></p>
+                    </div>
+                </div>
+
+                <div class="card card_wind-speed">
+                    <div class="card__top">
+                        <p class="card__name">wind speed</p>
+                    </div>
+                    <div class="card__body">
+                        <img class="card__icon" src="./img/wind.svg" alt="wind">
+                    </div>
+                    <div class="card__bottom">
+                        <p class="info info_wind-speed"></p>
+                    </div>
+                </div>
+
+                <div class="card card_wind-direction">
+                    <div class="card__top">
+                        <p class="card__name">wind direction</p>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__body_wrapper">
+                            <img class="card__icon" src="./img/compass.svg" alt="compass">
+                            <img class="direction" src="./img/direction.svg" alt="direction">
+                        </div>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="info info_wind-direction"></p>
+                    </div>
+                </div>
+
+                <div class="card card_pressure">
+                    <div class="card__top">
+                        <p class="card__name">Atmosphere pressure</p>
+                    </div>
+                    <div class="card__body">
+                        <img class="card__icon" src="./img/barometr.svg" alt="barometer">
+                    </div>
+                    <div class="card__bottom">
+                        <p class="info info-pressure"></p>
+                    </div>
+                </div>
+            </div>
+            <p class="choose-text">Choose your city from the list :</p>
+            <select class="city-select" name="city" id="city"></select>
+        </div>
+    </div>
+
+    <script src="./inddex.js"></script>
+</body>
+
+</html>
